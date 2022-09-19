@@ -1,0 +1,214 @@
+html, body {
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.header {
+    background: #01ac48;
+    padding: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+.content {
+    padding: 5px;
+    width: 100% !important;
+}
+a {
+    text-decoration: none !important;
+}
+h2 {
+    font-size: 26px;
+    margin-left: 0;
+    margin-top: 20px !important;
+}
+hr {
+    margin-top: 0 !important;
+}
+.results {
+    text-align: center;
+    padding: 20px;
+}
+.total {
+    margin-right: 0;
+    font-weight: 400;
+    justify-self: end;
+}
+.topbar {
+    display: grid;
+    grid-template-columns: auto 100px;
+}
+#addbtn {
+    padding: 5px;
+    border: 2px #01ac48 solid;
+    font-size: 12px;
+    border-radius: 3px;
+    background: #fff;
+    color: #01ac48;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+}
+#addbtn:hover {
+    background: #01ac48;
+    color: #fff;
+}
+#search-item {
+    font-size: 12px;
+    padding: 5px;
+    width: 150px;
+}
+#gototop {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    padding: 5px 10px;
+    background: #fff;
+    color: #01ac48;
+    border: 3px #01ac48 solid;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+    display: none;
+}
+
+
+
+.table-con {
+    overflow: scroll;
+    height: 500px;
+}
+table {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+table tr td, table tr th {
+    padding: 10px;
+    text-align: left;
+}
+.table-btn {
+    font-size: 12px;
+    margin: 5px;
+    margin-right: 0;
+    padding: 5px;
+}
+.table-btn:hover {
+    color: #fff !important;
+}
+
+
+
+
+#panel {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100%;
+    transition: .5s ease-in-out;
+    background: rgba(0, 0, 0, 0.95);
+    color: #fff;
+}
+.slide {
+    transform: translateX(-350px);
+}
+#exitbtn {
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+}
+#exitbtn:hover {
+    color: #ffd200;
+}
+.panel-title {
+    text-align: center;
+    margin: 5%;
+}
+
+#panel form {
+    width: 100%;
+    text-align: center;
+}
+#lbl-no {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 25px;
+}
+#panel form input[type='number'], 
+#panel form input[type='text'] {
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 300px;
+    background: #000;
+    border: 1px #fff solid;
+    color: #fff;
+}
+#panel form select {
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 25%;
+    background: #000;
+    border: 1px #fff solid;
+    color: #fff;
+}
+#panel form label[name='lbl-year'] {
+    margin-left: 20px;
+}
+#btn-add, #btn-edit {
+    width: 300px;
+    cursor: pointer;
+    margin-top: 5%;
+    padding: 10px 0;
+    font-weight: 700;
+}
+#panel-reset {
+    text-align: left !important;
+    width: 100%;
+}
+#btn-reset {
+    padding: 5px !important;
+    margin-left: 25px;
+    width: 60px !important;
+    margin-top: 20px;
+}
+.alert-success, .alert-danger, .alert-warning {
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .content {
+        padding: 40px !important;
+    }
+    .table-con {
+        overflow: visible !important;
+        height: auto;
+    }
+    #addbtn {
+        padding: 5px 10px !important;
+        border: 3px #01ac48 solid !important;
+        font-size: 15px !important;
+        border-radius: 5px !important;
+    }
+    #search-item {
+        font-size: 15px !important;
+        padding: 5px 10px !important;
+        width: 250px !important;
+    }
+    .topbar {
+        grid-template-columns: auto 150px !important;
+    }
+    #gototop {
+        display: inline-block !important;
+    }
+}
